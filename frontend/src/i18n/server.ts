@@ -19,14 +19,26 @@ const initI18next = async (language: string, ns: string | string []) => {
   return i18nInstance
 }
 
-export const useTranslation = async (ns: string | string[], options: { keyPrefix?: string } = {}) => {
-  const language = cookies().get(cookieName)?.value
-    ?? acceptLanguage.get(headers().get('Accept-Language'))
-    ?? fallbackLng
+export const useTranslation = async (
+  ns: string | string[],
+  options: { keyPrefix?: string } = {}
+) => {
+  const cookieStore = await cookies()
+  const headerStore = await headers()
+
+  const language =
+    cookieStore.get(cookieName)?.value ??
+    acceptLanguage.get(headerStore.get('Accept-Language')) ??
+    fallbackLng
 
   const i18nextInstance = await initI18next(language, ns)
+
   return {
-    t: i18nextInstance.getFixedT(language, Array.isArray(ns) ? ns[0] : ns, options.keyPrefix),
+    t: i18nextInstance.getFixedT(
+      language,
+      Array.isArray(ns) ? ns[0] : ns,
+      options.keyPrefix
+    ),
     i18n: i18nextInstance,
     resolvedLanguage: language,
   }

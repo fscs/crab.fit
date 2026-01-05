@@ -46,13 +46,15 @@ const Egg = () => {
     className={styles.modal}
     ref={ref}
   >
-    <img
-      className={styles.image}
-      src={url}
-      alt="A cute picture of Charli"
-      onLoadStart={() => setIsLoading(true)}
-      onLoad={() => setIsLoading(false)}
-    />
+  {url && (
+  <img
+    className={styles.image}
+    src={url}
+    alt="A cute picture of Charli"
+    onLoadStart={() => setIsLoading(true)}
+    onLoad={() => setIsLoading(false)}
+  />
+)}
     {isLoading && <div className={styles.loader} />}
   </dialog>
 }
