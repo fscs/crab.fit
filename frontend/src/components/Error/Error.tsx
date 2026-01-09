@@ -12,7 +12,7 @@ interface ErrorProps {
 }
 
 const Error = ({ children, onClose }: ErrorProps) =>
-  <div role="alert" className={makeClass(styles.error, children && styles.open)}>
+  <div role="alert" className={makeClass(styles.error, Number(children) && styles.open)}>
     {children}
     <button
       className={styles.closeButton}
