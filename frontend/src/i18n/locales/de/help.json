@@ -6,7 +6,7 @@
 
   "s1": "Schritt 1",
 
-  "p3": "Benutze das Formular auf <1>crab.fit</1>, um einen neuen Termin zu erfassen. Du brauchst nur einen groben Zeitrahmen für den Termin anzugeben, aber noch nicht deine Verfügbarkeit",
+  "p3": "Benutze das Formular auf <1>@FRONTEND_URL@</1>, um einen neuen Termin zu erfassen. Du brauchst nur einen groben Zeitrahmen für den Termin anzugeben, aber noch nicht deine Verfügbarkeit",
   "p4": "Beispiel: \"Jennys Geburtstags-Lunch\". Jenny will den Lunch in derselben Woche haben wie ihren Geburtstag, den 15. April, aber sie weiss, dass nicht alle ihre Freunde am 15. frei sind. Sie will ihn auch nicht am Wochenende",
   "p5": "Jenny weiss auch, dass der Lunch zwischen 11 und 5 Uhr stattfinden muss.",
 

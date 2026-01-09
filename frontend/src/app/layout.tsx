@@ -13,7 +13,7 @@ import './global.css'
 const karla = localFont({ src: './fonts/karla.ttf' })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://crab.fit'),
+  metadataBase: new URL('https://@FRONTEND_URL@'),
   title: {
     absolute: 'Crab Fit',
     template: '%s - Crab Fit',

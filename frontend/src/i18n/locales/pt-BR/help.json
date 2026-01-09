@@ -6,7 +6,7 @@
 
   "s1": "Passo 1",
 
-  "p3": "Preenche os dados em <1>crab.fit</1> para criar seu evento. Escolhe um peíodo de tempo aproximado no qual o evento deve occorer, i.e. as possíveis datas e horários.  Sua disponibilidade pessoal será num outro passo.",
+  "p3": "Preenche os dados em <1>@FRONTEND_URL@</1> para criar seu evento. Escolhe um peíodo de tempo aproximado no qual o evento deve occorer, i.e. as possíveis datas e horários.  Sua disponibilidade pessoal será num outro passo.",
   "p4": "Por exemplo \"Almoço de aniversário da Marina\". Ela quer convidar os amigos na mesma semana do seu aniversário no dia 15 de abril. Ela sabe que nem todo mundo tem tempo no dia 15 e tambêm não quer fazer no fim de semana.",
   "p5": "Marina quer que seja no horário do almoço, então não deve começar antes das 11 da manhã e nem terminar depois das 5 da tarde.",
 
