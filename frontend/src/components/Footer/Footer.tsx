@@ -10,35 +10,13 @@ interface FooterProps {
   isSmall?: boolean
 }
 
-const Footer = async ({ isSmall }: FooterProps) => {
-  const { t } = await useTranslation('common')
-
-  // ✅ Await headers() first
-  const headerStore = await headers()
-  const isRunningInApp = headerStore
-    .get('referer')
-    ?.includes('android-app://fit.crab')
-
-  return isRunningInApp
-    ? null // Cannot show external donation link in an Android app
-    : (
-        <footer
-          id="donate"
-          className={makeClass(styles.footer, isSmall && styles.small)}
-        >
-          <span>{t('donate.info')}</span>
-          <Button
-            isSmall
-            title={t('donate.title')}
-            href="https://ko-fi.com/A06841WZ"
-            target="_blank"
-            rel="noreferrer noopener payment"
-            style={{ whiteSpace: 'nowrap' }}
-          >
-            {t('donate.button')}
-          </Button>
-        </footer>
-      )
-}
+const Footer = async ({ isSmall }: FooterProps) => (
+  <footer
+    id="donate"
+    className={makeClass(styles.footer, isSmall && styles.small)}
+  >
+    <a href="https://static.hhu-fscs.de/datenschutz-crabfit">Privacy Notice</a>
+  </footer>
+)
 
 export default Footer
