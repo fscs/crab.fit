@@ -43,8 +43,6 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
       <TranslateDialog />
 
       {children}
-
-      <Analytics />
     </body>
   </html>
 }
