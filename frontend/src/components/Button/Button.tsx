@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
       isSecondary && styles.secondary,
       isSmall && styles.small,
       isLoading && styles.loading,
-      !children && icon && styles.iconButton,
+      !children && Number(icon) && styles.iconButton,
     ),
     style: {
       ...(surfaceColor && { '--override-surface-color': surfaceColor, '--override-text-color': '#FFFFFF' }),
