@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import localFont from 'next/font/local'
 
 import Egg from '/src/components/Egg/Egg'
@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   },
   keywords: ['crab', 'fit', 'crabfit', 'schedule', 'availability', 'availabilities', 'when2meet', 'doodle', 'meet', 'plan', 'time', 'timezone'],
   description: 'Enter your availability to find a time that works for everyone!',
-  themeColor: '#F79E00',
   manifest: 'manifest.json',
   openGraph: {
     title: 'Crab Fit',
@@ -30,6 +29,10 @@ export const metadata: Metadata = {
     icon: 'favicon.ico',
     apple: 'logo192.png',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#F79E00',
 }
 
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
