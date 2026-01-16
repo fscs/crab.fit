@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Karla } from 'next/font/google'
+import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react'
 
 import Egg from '/src/components/Egg/Egg'
@@ -10,7 +10,7 @@ import { useTranslation } from '/src/i18n/server'
 
 import './global.css'
 
-const karla = Karla({ subsets: ['latin'] })
+const karla = localFont({ src: './fonts/karla.ttf' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://crab.fit'),
