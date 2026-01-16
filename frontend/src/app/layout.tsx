@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
-import { Analytics } from '@vercel/analytics/react'
 
 import Egg from '/src/components/Egg/Egg'
 import Settings from '/src/components/Settings/Settings'
@@ -43,8 +42,6 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
       <TranslateDialog />
 
       {children}
-
-      <Analytics />
     </body>
   </html>
 }

@@ -41,7 +41,6 @@ const Page = async () => {
         <P>Links to privacy policies of the third party service providers used by the Service:</P>
         <Ul>
           <li><a href="https://www.google.com/policies/privacy/" target="blank">Google Play Services</a> (only used for Google Calendar sync)</li>
-          <li><a href="https://vercel.com/docs/concepts/analytics/privacy-policy" target="blank">Vercel Analytics</a></li>
         </Ul>
 
         <h2>Log Data</h2>
